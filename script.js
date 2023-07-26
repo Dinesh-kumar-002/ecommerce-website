@@ -451,7 +451,7 @@ localStorage.setItem('products', JSON.stringify(products));
 totalDisplay();
 }
 
-function category1(){
-  clearItems();
+// function category1(){
+//   clearItems();
 
-}
+// }
