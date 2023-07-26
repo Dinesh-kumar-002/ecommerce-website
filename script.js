@@ -25,7 +25,7 @@ if(localStorage.getItem("products")){
   })
 }
 
-del();
+
 function del(){
  if(products.length<1){
     empty.innerHTML=`<div class="emptycart">
@@ -272,7 +272,7 @@ function addNewItem(obj) {
     }
 
     totalDisplay();
-    del();
+    
   }
 
   
@@ -310,7 +310,7 @@ function removeProduct(rem){
     itemcount.innerHTML=products.length;
   }
   totalDisplay();
-  del();
+
   showAlert("Removed from cart!",'danger');
 }
 
