@@ -1,0 +1,178 @@
+[
+  {
+    "id":"starter1",
+    "name": "Banana cookies",
+    "image":"images/Banana cookies.jpg",
+    "price": 39,
+    "category": "starter"
+ },
+  { "id":"starter2",
+    "name": "Bruschetta two ways",
+    "image":"images/Bruschetta two ways.jpeg",
+    "price": 99,
+    "category": "starter"
+ },
+  {
+    "id":"starter3",
+    "name": "Samosa",
+    "image":"images/samosa.jpg",
+    "price": 19,
+    "category": "starter"
+ },
+  {
+    "id":"starter4",
+     "name": "Tandoori",
+     "image":"images/tandoori.jpg",
+     "price": 148,
+     "category": "starter"
+  },
+  { 
+    "id":"starter5",
+    "name": "Coffee",
+    "image":"images/coffee.jpg",
+     "price": 49,
+     "category":"starter" 
+  },
+  { 
+    "id":"starter6",
+    "name": "Cheese balls",
+    "image":"images/cheeseballs.jpg",
+     "price": 189,
+     "category": "starter" 
+  },
+  { 
+    "id":"starter7",
+    "name": "Roasted stuffed mushroom",
+    "image":"images/Roasted stuffed mushrooms.jpeg",
+     "price": 89,
+     "category": "starter" 
+  },
+  { 
+    "id":"starter8",
+    "name": "Giant cinnamon scroll",
+    "image":"images/Giant cinnamon scroll.jpeg",
+     "price": 49,
+     "category": "starter" 
+  },
+  { 
+    "id":"meal1",
+    "name": "Mutton Biriyani", 
+    "image":"images/biriyani.jpg",
+    "price": 249,
+    "category": "meal" 
+  },
+  { 
+    "id":"meal2",
+    "name": "Prawn noodles",
+    "image":"images/noodles.jpg",
+     "price": 189,
+     "category":"meal" 
+    },
+    { 
+    "id":"meal3",
+    "name": "Chapathi (Rotti)",
+    "image":"images/chapati.jpg",
+     "price": 69,
+     "category": "meal" 
+  },
+ 
+    { 
+    "id":"meal4",
+    "name": "Curd rice",
+    "image":"images/curd rice.jpg",
+     "price":79,
+     "category": "meal" 
+  },
+    { 
+    "id":"meal5",
+    "name": "Dosa",
+    "image":"images/dosa.jpg",
+     "price":59,
+     "category": "meal" 
+  },
+    { 
+    "id":"meal6",
+    "name": "Rice meal",
+    "image":"images/full meal.jpg",
+     "price":199,
+     "category": "meal" 
+  },
+    { 
+    "id":"meal7",
+    "name": "Idli",
+    "image":"images/idli.jpg",
+     "price":16,
+     "category": "meal" 
+  },
+    { 
+    "id":"meal8",
+    "name": "Bisibilabath",
+    "image":"images/sambar.jpg",
+     "price":79,
+     "category": "meal" 
+  },
+  {
+    "id":"soup1",
+    "name": "Chicken soup",
+    "image":"images/chicken soup.jpg",
+     "price":59,
+     "category": "soup" 
+  },
+  {
+    "id":"soup2",
+    "name": "Mutton soup",
+    "image":"images/muttonsoup.jpg",
+     "price":69,
+     "category": "soup" 
+  },
+  {
+    "id":"soup3",
+    "name": "Veg soup",
+    "image":"images/vegsoup.jpeg",
+     "price":49,
+     "category": "soup" 
+  },
+  {
+    "id":"pasta1",
+    "name": "Cheese pasta",
+    "image":"images/cheese pasta.jpg",
+     "price":69,
+     "category": "pasta" 
+  },
+  {
+    "id":"pasta2",
+    "name": "Scrambled egg pasta",
+    "image":"images/scrambled egg pasta.jpg",
+     "price":80 ,
+     "category": "pasta" 
+  },
+  {
+    "id":"pasta3",
+    "name": "Pasta with green salad",
+    "image":"images/pasta with green salad.jpg",
+     "price":70,
+     "category": "pasta" 
+  },
+  {
+    "id":"salad1",
+    "name": "Cornsalad",
+    "image":"images/cornsalad.jpg",
+     "price":70,
+     "category": "salad" 
+  },
+  {
+    "id":"salad2",
+    "name": "panner salad",
+    "image":"images/panner salad.jpg",
+     "price":70,
+     "category": "salad" 
+  },
+  {
+    "id":"salad3",
+    "name": "Cumber salad",
+    "image":"images/cumber pasta.jpg",
+     "price":39,
+     "category": "salad" 
+  }
+  
+]
