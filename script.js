@@ -37,22 +37,8 @@ function del(){
     empty.innerHTML='';
   }
   
-  // else if(products.length>1){
-  //   empty.classList.add("dele");
-  // }
 
 }
-
-
-// var products=()=>{
-// if(localStorage.getItem('products')){
-//   return JSON.parse(localStorage.getItem('products'));
-// }
-// else{
-//    localStorage.setItem("products",JSON.stringify(local));
-// }
-// }
-// console.log(products());
 
 // duplicate elements are filtering method
 
