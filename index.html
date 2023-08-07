@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheeDish Dealer  </title>
+  <link rel="shortcut icon" href="images/logo.png">
+  <script src="https://kit.fontawesome.com/92d73c3f26.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+      <!-- Navigation bar goes here --> 
+  <div class="whole" id="whole">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="text-decoration-none text-white d-flex align-items-center"><img src="images/logo.png" alt="" class="logo"><b class="">Thee Dish</b></a>
+        <form class="form d-flex justify-content-end " id="form">
+          <input class="form-control search" type="search" placeholder="search food..." aria-label="Search" id="input_field">
+          <button class="btn btn-success search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <i class="fa-solid fa-ellipsis-vertical" id="secondMenu" style="color: #ffffff;" onclick="showMenu()"></i>
+        </form>
+      </div>
+    </nav>
+    
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="cat">
+          <img src="images/Roasted stuffed mushrooms.jpeg" alt="" class="cat-image">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="cat mb-4 position-relative">
+          <img src="images/Roasted stuffed mushrooms.jpeg" alt="" class="cat-image h-100 w-100">
+          <h1 class="catItem text-white">STARTER</h1>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="cat">
+          <img src="images/Roasted stuffed mushrooms.jpeg" alt="" class="cat-image">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="cat">
+          <img src="images/Roasted stuffed mushrooms.jpeg" alt="" class="cat-image">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="cat">
+          <img src="images/Roasted stuffed mushrooms.jpeg" alt="" class="cat-image">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="menu">
+      <div class="container">
+        <ul class="nav justify-content-around">
+          
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center home" onclick="location.reload(true)">
+            <a class="nav-link"><i class="fa-solid fa-house icon" style="color: #ffffff;"></i></a>
+            <p class="text-white mt-0 icon-text">Home</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center category"  onclick="category1()">
+            <a class="nav-link"><i class="fa-solid fa-circle-chevron-down fa-rotate-180 icon" style="color: #ffffff;"></i>
+            </a>
+            <p class="text-white mt-0 icon-text">Category</p>
+          </li>
+          <li class="nav-item cart-logo mx-2 d-flex flex-column justify-content-center align-items-center cartlogo">
+            <a href="#banner" class="text-decoration-none position-relative px-2" onclick="showCart()">
+              <i class="fa-solid fa-cart-shopping"
+                style="color: #ffffff;">
+              </i>
+              <p class="itemcount  text-dark rounded-circle px-2 py-1" id="itemcount"></p>
+            </a>
+            <p class="text-white mt-0 icon-text mt-1">Cart</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center you">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user icon" style="color: #ffffff;"></i></a>
+            <p class="text-white mt-0 icon-text">you</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center settings">
+          <a class="nav-link" href="#"><i class="fa-solid fa-gear icon" style="color: #ffffff;"></i></a>
+          <p class="text-white mt-0 icon-text">Settings</p>
+          </li>
+        </ul>
+     </div>
+  </div>
+
+          <!-- nav bar for laptop -->
+  
+  <div id="menu-laptop" class="menu-laptop">
+      <div class="container">
+        <ul class="nav d-flex flex-column">
+          
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center home" onclick="displayAll()">
+            <a class="nav-link"><i class="fa-solid fa-house icon" style="color: #ffffff;"></i></a>
+            <p class="text-white mt-0 icon-text">Home</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center category">
+            <a class="nav-link" href="#"><i class="fa-solid fa-circle-chevron-down fa-rotate-180 icon" style="color: #ffffff;"></i>
+            </a>
+            <p class="text-white mt-0 icon-text">Category</p>
+          </li>
+          <li class="nav-item cart-logo mx-2 d-flex flex-column justify-content-center align-items-center cartlogo" onclick="showCart()">
+            <a class="text-decoration-none position-relative px-2">
+              <i class="fa-solid fa-cart-shopping" onclick="showCart()"
+                style="color: #ffffff;">
+              </i>
+              <p class="itemcount  text-dark rounded-circle px-2 py-1" id="itemcount"></p>
+            </a>
+            <p class="text-white mt-0 icon-text mt-1">Cart</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center you">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user icon" style="color: #ffffff;"></i></a>
+            <p class="text-white mt-0 icon-text">you</p>
+          </li>
+          <li class="nav-item d-flex flex-column justify-content-center align-items-center settings mb-3">
+          <a class="nav-link" href="#"><i class="fa-solid fa-gear icon" style="color: #ffffff;"></i></a>
+          <p class="text-white mt-0 icon-text">Settings</p>
+          </li>
+        </ul>
+     </div>
+  </div>
+   
+
+    <!-- Products Displaying -->
+    
+    <div class="banners mt-3" id="banner">
+      <img src="images/banner2.jpg" class="w-100" alt="">
+    </div>
+  <div class="container container1" id="container1">
+    <div id="presentAlert">
+      
+    </div>
+    <div class="row d-flex justify-content-center align-items-center" id="content">
+
+    </div>
+    
+  </div>
+
+      <!--Add to cart displaying   -->
+  <div class="container container2" id="showcart" data-aos="fade-left" data-aos-duration="1000">
+    <div id="close_button" class="d-flex justify-content-between mt-2">
+      <div class="cartName d-flex m-2 align-items-center justify-content-center">
+        <i class="fa-solid fa-basket-shopping fa-shake fs-2" style="color: #ffffff;"></i>
+        <h1 class="text-white ms-3 shadow-3 mt-1 fs-2">cart</h1>
+      </div>
+      <i class="fa-solid fa-xmark fa-flip" style="color: #ffffff;" onclick="closecart()"></i>
+    </div>
+    <div class="cartosal">
+      <div class="cart" id="cart">
+        <div id="empty">
+            
+        </div>
+      </div>
+      <hr id="hr">
+      <div class="total d-flex justify-content-between mb-3">
+        <div class="total_text text-white d-flex justify-content-center align-items-center">Total</div>
+        <div id="total_price" class="total_price text-white d-flex justify-content-center align-items-center">0</div>
+      </div>
+      <div class="carttotal">
+        <div class="row bg-secondary">
+          <div class="col d-flex justify-content-center align-items-center m-0 p-0">
+            <div class="buttons d-flex w-75 justify-content-around align-items-center ">
+              <button class="btn payment text-white continue" onclick="closecart()">continue shoping</button>
+              <button class="btn order text-white">
+                 Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mapLocation d-flex justify-content-center align-items-center flex-column">
+    <h3 class="text-white text-center">
+      Shop Location 
+    </h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d242.9084437473869!2d80.12964870280726!3d13.065237377670014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1690278706247!5m2!1sen!2sin" id="map" style="border:5px solid rgb(0, 75, 110);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer d-flex justify-content-center align-items-center">
+      <footer>
+        <p class="text-white mt-3">Copyright © 2023 Thee Dish Dealer</p>
+        <p>
+          <a href="">About</a> -
+          <a href="">Privacy Policy</a> -
+          <a href="">Contact Us</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
+
+<!-- <li class="nav-item">
+  <select name="category" id="category" class="select pe-0 m-0">
+
+    <option value="all">All</option>
+    <option value="starter">starter</option>
+    <option value="meal">meal</option>
+    <option value="soup">soup</option>
+    <option value="pasta">pasta</option>
+  </select>
+</a>
+</li> -->
+
+<!-- <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              catgories
+            </a> -->
+<!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="categories">
+              <li onclick="showFood('freshjuice')"><a class="dropdown-item freshjuice">freshJuice</a></li>
+              <li onclick="showFood('starter')"><a class="dropdown-item starter">starter</a></li>
+              <li onclick="showFood('meal')"><a class="dropdown-item meal">meal</a></li>
+              <li onclick="showFood('soup')"><a class="dropdown-item soup">soup</a></li>
+              <li onclick="showFood('salad')"><a class="dropdown-item salad">salad</a></li>
+              <li onclick="showFood('pasta')"><a class="dropdown-item pasta">pasta</a></li>
+              <li onclick="showFood('all')"><a class="dropdown-item all active">all</a></li>
+            </ul> -->
+
+             <!-- <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <select name="category" id="category" class="select mx-2">
+                <option value="all" active>All</option>
+                <option value="starter">starter</option>
+                <option value="meal">meal</option>
+                <option value="soup">soup</option>
+                <option value="pasta">pasta</option>
+              </select>
+            </li>
+          </ul>
+          <a class="mx-4 text-decoration-none" onclick="showCart()">
+            <i class="fa-solid fa-cart-shopping"
+              style="color: #ffffff;">
+            </i>
+            <h class="itemcount bg-dark text-white rounded-circle px-2 py-1 fs-7 fw-lighter" id="itemcount"></h>
+          </a> -->
+
+
+            <!-- <div class="itemstyle float-end d-flex me-4">
+              <div class="add d-flex justify-content-center align-items-center" onclick="add(this.nextElementSibling.innerHTML)">    
+                 +
+              </div>
+              <p class="itemCount">1</p>
+              <div class="minus d-flex justify-content-center align-items-center " onclick="minus(this.previousElementSibling.innerHTML)">    
+                -
+              </div>
+              </div> -->
+              
+              <!-- <p class="totalCost text-white my-0  mx-1">${instantTotal}</p> -->
